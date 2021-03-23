@@ -41,6 +41,7 @@ public class Sender {
             byte[] byteArray=getByteArray(payasin);
             String message = "testiri";
             channel.basicPublish("", QUEUE_NAME, null, byteArray);
+            System.out.println("no hay bugs jeje");
             System.out.println(" [x] Sent '" + payasin + "'"+" TESTIRI");
         }
     }
